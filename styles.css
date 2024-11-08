@@ -1,0 +1,119 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #0056a8;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: #0056a8;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Producto */
+.product-section {
+    margin-bottom: 40px;
+}
+
+.product-image {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 22px;
+    color: #0056a8;
+}
+
+.product-description, .product-price {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.label {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 16px;
+}
+
+.select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0056a8;
+    border-radius: 5px;
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0056a8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #003f78;
+}
+
+/* Instrucciones */
+.instructions-section {
+    margin: 40px 0;
+}
+
+.instructions-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+/* Testimonios */
+.testimonials-section {
+    margin: 40px 0;
+}
+
+.testimonial {
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #0056a8;
+    text-align: center;
+}
+
+.footer .button {
+    background-color: #ffffff;
+    color: #0056a8;
+}
+
+.footer .button:hover {
+    background-color: #e6e6e6;
+}
