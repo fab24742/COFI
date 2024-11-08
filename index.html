@@ -7,46 +7,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>COFI</h1>
+    <header class="header">
+        <img src="logocofi.png" alt="Logo de COFI" class="logo">
+        <h1 class="title">COFI - Café de Calidad</h1>
     </header>
     
-    <main>
-        <section id="producto">
-            <img src="solocofi.png" alt="COFI Pack">
-            <h2>COFI Pack (10 Unidades)</h2>
-            <p>Café de calidad sin complicaciones. Perfecto para cualquier circunstancia.</p>
-            <p>Precio: S/30 ($7.96)</p>
+    <main class="main-content">
+        <!-- Producto -->
+        <section id="producto" class="product-section">
+            <img src="solocofi.png" alt="COFI Pack" class="product-image">
+            <h2 class="product-title">COFI Pack (10 Unidades)</h2>
+            <p class="product-description">Café de calidad sin complicaciones. Perfecto para cualquier circunstancia.</p>
+            <p class="product-price">Precio: S/30 ($7.96)</p>
 
             <!-- Selección de Cantidad -->
-            <label for="cantidad">Selecciona la cantidad:</label>
-            <select id="cantidad">
+            <label for="cantidad" class="label">Selecciona la cantidad:</label>
+            <select id="cantidad" class="select">
                 <option value="1">1 Pack</option>
                 <option value="2">2 Packs</option>
                 <option value="3">3 Packs</option>
             </select>
 
             <!-- Botón de Compra por WhatsApp -->
-            <button id="comprar">Comprar por WhatsApp</button>
+            <button id="comprar" class="button">Comprar por WhatsApp</button>
         </section>
 
-        <section id="como-preparar">
-            <h3>¿Cómo Preparar COFI?</h3>
-            <ul>
-                <li>Vierte 300 ml de agua caliente</li>
-                <li>Sumerge y levanta por 15-30 segundos</li>
-                <li>Reposa 5 minutos y disfruta</li>
-            </ul>
+        <!-- Instrucciones -->
+        <section id="como-preparar" class="instructions-section">
+            <h3 class="section-title">¿Cómo Preparar COFI?</h3>
+            <img src="instruccionescofi.png" alt="Instrucciones de preparación" class="instructions-image">
         </section>
 
-        <section id="testimonios">
-            <h3>Testimonios</h3>
-            <p>“Disfruto de mi COFI todos los días sin complicaciones.” - Usuario Satisfecho</p>
+        <!-- Testimonios -->
+        <section id="testimonios" class="testimonials-section">
+            <h3 class="section-title">Testimonios</h3>
+            <p class="testimonial">“Disfruto de mi COFI todos los días sin complicaciones.” - Usuario Satisfecho</p>
         </section>
     </main>
 
-    <footer>
-        <button id="informacion">Chatea para más información</button>
+    <footer class="footer">
+        <button id="informacion" class="button">Chatea para más información</button>
     </footer>
 
     <script src="script.js"></script>
