@@ -8,17 +8,17 @@
 </head>
 <body>
     <header class="header">
+        <h1 class="title">COFI</h1>
         <img src="logocofi.png" alt="Logo de COFI" class="logo">
-        <h1 class="title">COFI - Café de Calidad</h1>
     </header>
     
     <main class="main-content">
         <!-- Producto -->
         <section id="producto" class="product-section">
-            <img src="solocofi.png" alt="COFI Pack" class="product-image">
+            <img src="cofiencaja-Photoroom.png" alt="COFI Pack" class="product-image">
             <h2 class="product-title">COFI Pack (10 Unidades)</h2>
             <p class="product-description">Café de calidad sin complicaciones. Perfecto para cualquier circunstancia.</p>
-            <p class="product-price">Precio: S/30 ($7.96)</p>
+            <p class="product-price">Precio por pack: S/35</p>
 
             <!-- Selección de Cantidad -->
             <label for="cantidad" class="label">Selecciona la cantidad:</label>
@@ -28,20 +28,40 @@
                 <option value="3">3 Packs</option>
             </select>
 
+            <!-- Selección del distrito -->
+            <label for="distrito" class="label">Selecciona tu distrito:</label>
+            <select id="distrito" class="select">
+                <option value="10">San Isidro - S/10</option>
+                <option value="8">Miraflores - S/8</option>
+                <option value="12">Surco - S/12</option>
+                <option value="15">La Molina - S/15</option>
+            </select>
+
+            <!-- Precio Total -->
+            <p class="total-price">Total: S/<span id="total">35</span></p>
+
             <!-- Botón de Compra por WhatsApp -->
             <button id="comprar" class="button">Comprar por WhatsApp</button>
         </section>
 
-        <!-- Instrucciones -->
-        <section id="como-preparar" class="instructions-section">
-            <h3 class="section-title">¿Cómo Preparar COFI?</h3>
-            <img src="instruccionescofi.png" alt="Instrucciones de preparación" class="instructions-image">
+        <!-- Redes Sociales -->
+        <section id="redes-sociales" class="social-section">
+            <h3 class="section-title">Síguenos en Redes Sociales</h3>
+            <img src="solocofi.png" alt="COFI Redes" class="social-image">
+            <div class="social-links">
+                <a href="https://www.instagram.com/cofi_easybrew/profilecard/?igsh=MW84bHh2bW5tam9qcQ==" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@cofi.easybrew?_t=8r94W8NAC2v&_r=1" target="_blank">TikTok</a>
+            </div>
         </section>
 
-        <!-- Testimonios -->
-        <section id="testimonios" class="testimonials-section">
-            <h3 class="section-title">Testimonios</h3>
-            <p class="testimonial">“Disfruto de mi COFI todos los días sin complicaciones.” - Usuario Satisfecho</p>
+        <!-- Galería de Imágenes -->
+        <section id="galeria" class="gallery-section">
+            <h3 class="section-title">Explora Nuestros Productos</h3>
+            <div class="gallery">
+                <img src="onecofi-Photoroom.png" alt="Producto 1" class="gallery-image">
+                <img src="onecoficostado-Photoroom.png" alt="Producto 2" class="gallery-image">
+                <img src="6cofis-Photoroom.png" alt="Producto 3" class="gallery-image">
+            </div>
         </section>
     </main>
 
