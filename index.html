@@ -20,22 +20,26 @@
             <p class="product-description">Café de calidad sin complicaciones. Perfecto para cualquier circunstancia.</p>
             <p class="product-price">Precio por pack: S/35</p>
 
-            <!-- Selección de Cantidad -->
-            <label for="cantidad" class="label">Selecciona la cantidad:</label>
-            <select id="cantidad" class="select">
-                <option value="1">1 Pack</option>
-                <option value="2">2 Packs</option>
-                <option value="3">3 Packs</option>
-            </select>
-
-            <!-- Selección del distrito -->
-            <label for="distrito" class="label">Selecciona tu distrito:</label>
-            <select id="distrito" class="select">
-                <option value="10">San Isidro - S/10</option>
-                <option value="8">Miraflores - S/8</option>
-                <option value="12">Surco - S/12</option>
-                <option value="15">La Molina - S/15</option>
-            </select>
+            <!-- Selección de Cantidad y Distrito -->
+            <div class="selection-container">
+                <div class="selection-item">
+                    <label for="cantidad" class="label">Cantidad:</label>
+                    <select id="cantidad" class="select">
+                        <option value="1">1 Pack</option>
+                        <option value="2">2 Packs</option>
+                        <option value="3">3 Packs</option>
+                    </select>
+                </div>
+                <div class="selection-item">
+                    <label for="distrito" class="label">Distrito:</label>
+                    <select id="distrito" class="select">
+                        <option value="10">San Isidro - S/10</option>
+                        <option value="8">Miraflores - S/8</option>
+                        <option value="12">Surco - S/12</option>
+                        <option value="15">La Molina - S/15</option>
+                    </select>
+                </div>
+            </div>
 
             <!-- Precio Total -->
             <p class="total-price">Total: S/<span id="total">35</span></p>
@@ -46,37 +50,20 @@
 
         <!-- Redes Sociales -->
         <section id="redes-sociales" class="social-section">
-            <h3 class="section-title">Explora el Mundo COFI</h3>
-            <p class="social-tagline">"El café que te acompaña en todas tus aventuras."</p>
-            <img src="solocofi.png" alt="COFI Redes" class="social-image">
+            <p class="social-tagline">El café que te acompaña en todas tus aventuras.</p>
+            <div class="social-images">
+                <img src="6cofis-Photoroom.png" alt="6 Cofis" class="social-image">
+                <img src="coficontacita-Photoroom.png" alt="Cofi con Tacita" class="social-image">
+            </div>
             <div class="social-links">
                 <a href="https://www.instagram.com/cofi_easybrew/profilecard/?igsh=MW84bHh2bW5tam9qcQ==" target="_blank" class="social-button">Instagram</a>
                 <a href="https://www.tiktok.com/@cofi.easybrew?_t=8r94W8NAC2v&_r=1" target="_blank" class="social-button">TikTok</a>
             </div>
         </section>
-
-        <!-- Galería de Imágenes -->
-        <section id="galeria" class="gallery-section">
-            <h3 class="section-title">Buen Café, Buenas Experiencias</h3>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="onecofi-Photoroom.png" alt="Producto 1" class="gallery-image">
-                    <p class="gallery-caption">"Be COFI, be happy"</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="onecoficostado-Photoroom.png" alt="Producto 2" class="gallery-image">
-                    <p class="gallery-caption">"Café que sigue tu ritmo"</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="6cofis-Photoroom.png" alt="Producto 3" class="gallery-image">
-                    <p class="gallery-caption">"Listo cuando tú lo estés"</p>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
-        <p class="footer-text">"Sin desorden, sin complicaciones, solo buen café"</p>
+        <p class="footer-text">"Sin desorden, sin complicaciones, solo buen café."</p>
         <button id="informacion" class="button">Chatea para más información</button>
     </footer>
 
