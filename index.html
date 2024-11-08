@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Barra Superior -->
     <header class="header">
-        <h1 class="title">COFI</h1>
-        <img src="logocofi.png" alt="Logo de COFI" class="logo">
+        <div class="logo-container">
+            <img src="logocofi.png" alt="Logo de COFI" class="logo">
+            <h1 class="title">COFI</h1>
+        </div>
     </header>
     
     <main class="main-content">
@@ -45,7 +48,7 @@
             <p class="total-price">Total: S/<span id="total">35</span></p>
 
             <!-- Botón de Compra por WhatsApp -->
-            <button id="comprar" class="button">Comprar por WhatsApp</button>
+            <button id="comprar" class="button primary-button">Comprar por WhatsApp</button>
         </section>
 
         <!-- Redes Sociales -->
@@ -56,15 +59,19 @@
                 <img src="coficontacita-Photoroom.png" alt="Cofi con Tacita" class="social-image">
             </div>
             <div class="social-links">
-                <a href="https://www.instagram.com/cofi_easybrew/profilecard/?igsh=MW84bHh2bW5tam9qcQ==" target="_blank" class="social-button">Instagram</a>
-                <a href="https://www.tiktok.com/@cofi.easybrew?_t=8r94W8NAC2v&_r=1" target="_blank" class="social-button">TikTok</a>
+                <a href="https://www.instagram.com/cofi_easybrew/profilecard/?igsh=MW84bHh2bW5tam9qcQ==" target="_blank" class="social-button">
+                    <img src="instagram-icon.png" alt="Instagram" class="social-icon"> Instagram
+                </a>
+                <a href="https://www.tiktok.com/@cofi.easybrew?_t=8r94W8NAC2v&_r=1" target="_blank" class="social-button">
+                    <img src="tiktok-icon.png" alt="TikTok" class="social-icon"> TikTok
+                </a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <p class="footer-text">"Sin desorden, sin complicaciones, solo buen café."</p>
-        <button id="informacion" class="button">Chatea para más información</button>
+        <button id="informacion" class="button secondary-button">Chatea para más información</button>
     </footer>
 
     <script src="script.js"></script>
