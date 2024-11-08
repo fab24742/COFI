@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFI - Café de Calidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>COFI</h1>
+    </header>
+    
+    <main>
+        <section id="producto">
+            <img src="assets/cofi-pack.jpg" alt="COFI Pack">
+            <h2>COFI Pack (10 Unidades)</h2>
+            <p>Café de calidad sin complicaciones. Perfecto para cualquier circunstancia.</p>
+            <p>Precio: S/30 ($7.96)</p>
+
+            <!-- Selección de Cantidad -->
+            <label for="cantidad">Selecciona la cantidad:</label>
+            <select id="cantidad">
+                <option value="1">1 Pack</option>
+                <option value="2">2 Packs</option>
+                <option value="3">3 Packs</option>
+            </select>
+
+            <!-- Botón de Compra por WhatsApp -->
+            <button id="comprar">Comprar por WhatsApp</button>
+        </section>
+
+        <section id="como-preparar">
+            <h3>¿Cómo Preparar COFI?</h3>
+            <ul>
+                <li>Vierte 300 ml de agua caliente</li>
+                <li>Sumerge y levanta por 15-30 segundos</li>
+                <li>Reposa 5 minutos y disfruta</li>
+            </ul>
+        </section>
+
+        <section id="testimonios">
+            <h3>Testimonios</h3>
+            <p>“Disfruto de mi COFI todos los días sin complicaciones.” - Usuario Satisfecho</p>
+        </section>
+    </main>
+
+    <footer>
+        <button id="informacion">Chatea para más información</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
