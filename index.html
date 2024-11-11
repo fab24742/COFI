@@ -43,16 +43,32 @@
                         <option value="15">La Molina - S/15</option>
                         <option value="15">Villa El Salvador - S/15</option>
                         <option value="15">Chorrillos - S/15</option>
-                        <!-- Agregar más distritos si es necesario -->
                     </select>
                 </div>
             </div>
 
-            <!-- Precio Total -->
+            <!-- Precio Total y Ahorro -->
             <p class="total-price">Total: S/<span id="total">35</span></p>
+            <p class="discount-info" id="discount-info">Ahorro: S/0</p>
 
             <!-- Botón de Compra por WhatsApp -->
             <button id="comprar" class="button primary-button">Comprar por WhatsApp</button>
+
+            <!-- Formulario de Datos Adicionales -->
+            <div id="formulario" class="form-popup">
+                <h3>Completa tu información</h3>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                
+                <label for="direccion">Dirección exacta:</label>
+                <input type="text" id="direccion" required>
+
+                <label for="contacto">Número de contacto:</label>
+                <input type="text" id="contacto" required>
+
+                <button id="confirmar" class="button primary-button">Confirmar y Enviar</button>
+                <button id="cerrar" class="button secondary-button">Cancelar</button>
+            </div>
         </section>
 
         <!-- Redes Sociales -->
