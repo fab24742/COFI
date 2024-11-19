@@ -13,46 +13,51 @@
             <img src="logocofi.png" alt="Logo de COFI" class="logo">
             <h1 class="title">COFI</h1>
         </div>
-        <nav class="nav">
-            <a href="#productos" class="nav-link">Productos</a>
-            <a href="#como-preparar" class="nav-link">Cómo Preparar</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
-        </nav>
     </header>
     
     <!-- Productos -->
-    <main id="productos" class="product-section">
+    <main class="product-section">
         <h2 class="section-title">Nuestros Productos</h2>
-        <div class="product-grid">
-            <!-- Producto 1 -->
-            <div class="product-card">
-                <img src="packcofipack.png" alt="COFI Pack 12 unidades" class="product-image">
-                <h3 class="product-title">COFI Pack (12 Unidades)</h3>
-                <p class="product-price">S/38.00</p>
-                <button class="button primary-button" data-pack="1" data-precio="38">Comprar</button>
+        <div class="selection-container">
+            <!-- Selección de Cantidad -->
+            <div class="selection-item">
+                <label for="cantidad" class="label">Cantidad:</label>
+                <select id="cantidad" class="select">
+                    <option value="1">1 Pack (12 Unidades)</option>
+                    <option value="2">2 Packs (24 Unidades - Delivery Gratis)</option>
+                </select>
             </div>
-            <!-- Producto 2 -->
-            <div class="product-card">
-                <img src="2 doscofipack.png" alt="COFI Pack Doble" class="product-image">
-                <h3 class="product-title">2 COFI Packs (24 Unidades)</h3>
-                <p class="product-price">S/72.00 (Envío Gratis)</p>
-                <button class="button primary-button" data-pack="2" data-precio="72">Comprar</button>
+            <!-- Selección de Distrito -->
+            <div class="selection-item">
+                <label for="distrito" class="label">Distrito:</label>
+                <select id="distrito" class="select">
+                    <option value="8">San Borja</option>
+                    <option value="8">Miraflores</option>
+                    <option value="10">San Isidro</option>
+                    <option value="12">Surco</option>
+                    <option value="15">La Molina</option>
+                    <option value="15">Villa El Salvador</option>
+                    <option value="15">Chorrillos</option>
+                </select>
             </div>
         </div>
+
+        <!-- Total Precio -->
+        <p class="total-price">Total: S/<span id="total">38.00</span></p>
+        <p id="delivery-note" class="delivery-note"></p>
+
+        <!-- Botón de Compra -->
+        <button id="comprar" class="button primary-button">Comprar por WhatsApp</button>
     </main>
-    
+
     <!-- Cómo Preparar -->
-    <section id="como-preparar" class="instructions-section">
-        <h2 class="section-title">Tu Café Listo en 3 Pasos</h2>
+    <section class="instructions-section">
         <img src="COFIpreparaci.png" alt="Cómo preparar COFI" class="instructions-image">
     </section>
-    
+
     <!-- Footer -->
-    <footer id="contacto" class="footer">
-        <div class="footer-content">
-            <p>"Sin desorden, sin complicaciones, solo buen café."</p>
-            <button id="informacion" class="button secondary-button">Chatea para más información</button>
-        </div>
+    <footer class="footer">
+        <p>"Sin desorden, sin complicaciones, solo buen café."</p>
         <div class="social-links">
             <a href="https://www.instagram.com/" target="_blank" class="social-button">
                 <img src="igiglogo.png" alt="Instagram" class="social-icon"> Instagram
