@@ -7,72 +7,67 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
+    <!-- Header -->
     <header class="header">
         <div class="logo-container">
-            <img src="logocofi.png" alt="Logo COFI" class="logo">
+            <img src="logocofi.png" alt="Logo de COFI" class="logo">
             <h1 class="title">COFI</h1>
         </div>
         <nav class="nav">
             <a href="#productos" class="nav-link">Productos</a>
-            <a href="#como-preparar" class="nav-link">Cómo Preparar</a>
+            <a href="#preparacion" class="nav-link">Cómo Preparar</a>
             <a href="#contacto" class="nav-link">Contacto</a>
         </nav>
     </header>
 
-    <!-- Sección Productos -->
+    <!-- Productos -->
     <main id="productos" class="product-section">
         <h2 class="section-title">Nuestros Productos</h2>
         <div class="product-grid">
             <!-- Producto 1 -->
             <div class="product-card">
-                <img src="packcofipack.png" alt="COFI Pack (12 Unidades)" class="product-image">
+                <img src="packcofipack.png" alt="COFI Pack 12 unidades" class="product-image">
                 <h3 class="product-title">COFI Pack (12 Unidades)</h3>
                 <p class="product-price">S/38.00</p>
                 <label for="distrito1">Selecciona tu distrito:</label>
-                <select id="distrito1" class="select">
-                    <option value="8">San Borja - S/8</option>
-                    <option value="8">Miraflores - S/8</option>
-                    <option value="10">San Isidro - S/10</option>
-                    <option value="12">Surco - S/12</option>
+                <select id="distrito1" class="select-distrito">
+                    <option value="San Borja">San Borja (S/8)</option>
+                    <option value="Miraflores">Miraflores (S/8)</option>
+                    <option value="San Isidro">San Isidro (S/10)</option>
+                    <option value="Surco">Surco (S/12)</option>
                 </select>
                 <button class="button primary-button" data-pack="1" data-precio="38">Comprar</button>
             </div>
+
             <!-- Producto 2 -->
             <div class="product-card">
-                <img src="2 doscofipack.png" alt="2 COFI Packs (24 Unidades)" class="product-image">
+                <img src="2 doscofipack.png" alt="2 COFI Packs" class="product-image">
                 <h3 class="product-title">2 COFI Packs (24 Unidades)</h3>
                 <p class="product-price">S/72.00 (Envío Gratis)</p>
                 <label for="distrito2">Selecciona tu distrito:</label>
-                <select id="distrito2" class="select">
-                    <option value="8">San Borja - S/8</option>
-                    <option value="8">Miraflores - S/8</option>
-                    <option value="10">San Isidro - S/10</option>
-                    <option value="12">Surco - S/12</option>
+                <select id="distrito2" class="select-distrito">
+                    <option value="San Borja">San Borja (S/0)</option>
+                    <option value="Miraflores">Miraflores (S/0)</option>
+                    <option value="San Isidro">San Isidro (S/0)</option>
+                    <option value="Surco">Surco (S/0)</option>
                 </select>
                 <button class="button primary-button" data-pack="2" data-precio="72">Comprar</button>
             </div>
         </div>
     </main>
 
-    <!-- Sección Cómo Preparar -->
-    <section id="como-preparar" class="instructions-section">
+    <!-- Cómo Preparar -->
+    <section id="preparacion" class="instructions-section">
         <h2 class="section-title">Cómo Preparar tu COFI</h2>
-        <img src="COFIpreparaci.png" alt="Preparación COFI" class="instructions-image">
+        <img src="COFIpreparaci.png" alt="Instrucciones para preparar COFI" class="instructions-image">
     </section>
 
-    <!-- Sección Contacto -->
+    <!-- Footer -->
     <footer id="contacto" class="footer">
         <div class="footer-content">
-            <p>Disfruta tu café. Valora tu tiempo.</p>
-            <div class="footer-images">
-                <img src="COFIpacktaza.png" alt="Pack con taza" class="footer-image">
-                <img src="COFIltrante.png" alt="Filtro de café" class="footer-image">
-            </div>
-        </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/" class="social-button">Instagram</a>
-            <a href="https://www.tiktok.com/" class="social-button">TikTok</a>
+            <img src="COFIltrante.png" alt="Filtro COFI" class="footer-image">
+            <p class="footer-text">"Disfruta tu café. Valora tu tiempo."</p>
+            <button id="informacion" class="button secondary-button">Chatea para más información</button>
         </div>
     </footer>
 
