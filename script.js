@@ -1,45 +1,34 @@
-// Pricing and Delivery Logic
-const pricePerPack = 38; // Price for 1 pack
-const priceTwoPacks = 72; // Price for 2 packs (with free delivery)
 const deliveryCosts = {
     "San Borja": 8,
     "Miraflores": 8,
     "San Isidro": 10,
     "Surco": 12,
-    "La Molina": 15,
-    "Villa El Salvador": 15,
-    "Chorrillos": 15,
+    "La Molina": 15
 };
 
-// Update Total Price and Delivery Cost
-document.getElementById('cantidad').addEventListener('change', updateTotal);
-document.getElementById('distrito').addEventListener('change', updateTotal);
+// Evento para producto 1
+document.querySelectorAll('.primary-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const pack = button.getAttribute('data-pack');
+        const precio = parseFloat(button.getAttribute('data-precio'));
+        let distrito = "N/A";
 
-function updateTotal() {
-    const cantidad = parseInt(document.getElementById('cantidad').value);
-    const distrito = document.getElementById('distrito').options[document.getElementById('distrito').selectedIndex].text;
-    const deliveryCost = deliveryCosts[distrito];
+        if (pack === "1") {
+            distrito = document.getElementById("distrito1").value;
+            const deliveryCost = deliveryCosts[distrito];
+            const total = precio + deliveryCost;
 
-    let total = pricePerPack * cantidad;
-    let deliveryNote = "";
+            const mensaje = `Hola! Quiero comprar 1 COFI Pack por S/${precio}. Costo de envío: S/${deliveryCost}. Total: S/${total}. Envío a ${distrito}.`;
+            window.open(`https://wa.me/51951182402?text=${encodeURIComponent(mensaje)}`, '_blank');
+        } else {
+            const mensaje = `Hola! Quiero comprar 2 COFI Packs por S/${precio} (Envío gratis).`;
+            window.open(`https://wa.me/51951182402?text=${encodeURIComponent(mensaje)}`, '_blank');
+        }
+    });
+});
 
-    if (cantidad === 1) {
-        total += deliveryCost;
-        deliveryNote = `Costo de envío: S/${deliveryCost}`;
-    } else {
-        deliveryNote = "Delivery Gratis";
-    }
-
-    document.getElementById('total').textContent = total.toFixed(2);
-    document.getElementById('delivery-note').textContent = deliveryNote;
-}
-
-// WhatsApp Purchase Button
-document.getElementById('comprar').addEventListener('click', () => {
-    const cantidad = parseInt(document.getElementById('cantidad').value);
-    const distrito = document.getElementById('distrito').options[document.getElementById('distrito').selectedIndex].text;
-    const total = parseFloat(document.getElementById('total').textContent);
-
-    const message = `Hola! Quiero comprar ${cantidad === 1 ? "1 Pack (12 Unidades)" : "2 Packs (24 Unidades - Delivery Gratis)"} por S/${total}. Distrito: ${distrito}.`;
-    window.open(`https://wa.me/51951182402?text=${encodeURIComponent(message)}`, '_blank');
+// Botón de más información
+document.getElementById('informacion').addEventListener('click', () => {
+    const mensaje = "Hola, me interesa saber más sobre COFI.";
+    window.open(`https://wa.me/51951182402?text=${encodeURIComponent(mensaje)}`, '_blank');
 });
