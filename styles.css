@@ -1,123 +1,39 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border-bottom: 2px solid #0056a8;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.title {
-    font-family: Impact, sans-serif;
-    font-size: 24px;
-    color: #0056a8;
-    margin: 0;
-}
-
-/* Navigation */
-.nav {
-    display: flex;
-    gap: 15px;
-}
-
-.nav-link {
-    font-size: 16px;
-    color: #0056a8;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-/* Products Section */
-.product-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.product-card {
-    background-color: #ffffff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product-image {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-}
-
-.product-title {
-    font-size: 18px;
-    color: #333;
-    margin: 10px 0;
-}
-
-.product-price {
-    font-size: 16px;
-    color: #0056a8;
-}
-
-/* Social Section */
-.social-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.social-images {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.social-preview {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.social-preview:hover {
-    transform: scale(1.1);
-}
-
 /* Footer */
 .footer {
     background-color: #0056a8;
     color: #ffffff;
     padding: 20px;
     text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-image {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-button {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icon {
+    height: 20px;
 }
