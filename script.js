@@ -1,6 +1,3 @@
-
-
-
 // Configuración de compra
 document.querySelectorAll('.primary-button').forEach(button => {
     button.addEventListener('click', () => {
