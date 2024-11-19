@@ -1,26 +1,22 @@
 // Precios y costos de envío
-const pricePerPack = 38;
+const pricePerPack = 38; // Precio para 1 pack
 const priceTwoPacks = 72; // Envío gratis
 const deliveryCosts = {
     "San Borja": 8,
     "Miraflores": 8,
     "San Isidro": 10,
-    "Surco": 12
+    "Surco": 12,
 };
 
-// Función de cálculo y redirección a WhatsApp
 document.querySelectorAll('.primary-button').forEach(button => {
     button.addEventListener('click', () => {
         const pack = button.getAttribute('data-pack');
         const precio = button.getAttribute('data-precio');
-        const distritoSelect = button.previousElementSibling.value;
-        const distrito = button.previousElementSibling.options[button.previousElementSibling.selectedIndex].text;
+        const distritoSelect = pack === "1" ? document.getElementById('distrito1') : document.getElementById('distrito2');
+        const distrito = distritoSelect.value;
+        const deliveryCost = pack === "1" ? deliveryCosts[distrito] : 0;
 
-        let total = parseInt(precio);
-        if (pack === "1") {
-            total += deliveryCosts[distrito];
-        }
-
+        const total = parseInt(precio) + deliveryCost;
         const mensaje = `Hola! Quiero comprar ${pack} COFI Pack(s). Distrito: ${distrito}. Total: S/${total}.`;
         window.open(`https://wa.me/51951182402?text=${encodeURIComponent(mensaje)}`, '_blank');
     });
