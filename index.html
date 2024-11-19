@@ -18,14 +18,13 @@
     <main class="main-content">
         <!-- Producto -->
         <section id="producto" class="product-section">
-            <img src="cofiencaja-Photoroom.png" alt="COFI Pack" class="product-image">
             <h2 class="product-title">COFI Pack (10 Unidades)</h2>
-            <p class="product-description">Café de calidad sin complicaciones. Perfecto para cualquier circunstancia.</p>
-            <p class="product-price">Precio por pack: S/35</p>
-
-            <!-- Selección de Cantidad y Distrito -->
-            <div class="selection-container">
-                <div class="selection-item">
+            <p class="product-description">Café de especialidad sin complicaciones. Perfecto para cualquier momento.</p>
+            <img src="COFIpacktaza.png" alt="COFI Pack" class="product-image">
+            
+            <div class="price-container">
+                <p class="product-price">Precio por pack: <span>S/35</span></p>
+                <div class="selection-container">
                     <label for="cantidad" class="label">Cantidad:</label>
                     <select id="cantidad" class="select">
                         <option value="1">1 Pack</option>
@@ -33,7 +32,7 @@
                         <option value="3">3 Packs (15% descuento y envío gratis)</option>
                     </select>
                 </div>
-                <div class="selection-item">
+                <div class="selection-container">
                     <label for="distrito" class="label">Distrito:</label>
                     <select id="distrito" class="select">
                         <option value="8">San Borja - S/8</option>
@@ -41,47 +40,29 @@
                         <option value="10">San Isidro - S/10</option>
                         <option value="12">Surco - S/12</option>
                         <option value="15">La Molina - S/15</option>
-                        <option value="15">Villa El Salvador - S/15</option>
-                        <option value="15">Chorrillos - S/15</option>
                     </select>
                 </div>
+                <p class="total-price">Total: <span id="total">S/35</span></p>
+                <p class="discount-info" id="discount-info">Ahorro: <span>S/0</span></p>
             </div>
-
-            <!-- Precio Total y Ahorro -->
-            <p class="total-price">Total: S/<span id="total">35</span></p>
-            <p class="discount-info" id="discount-info">Ahorro: S/0</p>
-
-            <!-- Botón de Compra por WhatsApp -->
             <button id="comprar" class="button primary-button">Comprar por WhatsApp</button>
+        </section>
 
-            <!-- Formulario de Datos Adicionales -->
-            <div id="formulario" class="form-popup">
-                <h3>Completa tu información</h3>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
-                
-                <label for="direccion">Dirección exacta:</label>
-                <input type="text" id="direccion" required>
-
-                <label for="contacto">Número de contacto:</label>
-                <input type="text" id="contacto" required>
-
-                <button id="confirmar" class="button primary-button">Confirmar y Enviar</button>
-                <button id="cerrar" class="button secondary-button">Cancelar</button>
-            </div>
+        <!-- Preparación -->
+        <section id="preparacion" class="preparation-section">
+            <h3 class="section-title">Tu Café Listo en 3 Pasos</h3>
+            <img src="COFIpreparaci.png" alt="Preparación COFI" class="prep-image">
         </section>
 
         <!-- Redes Sociales -->
         <section id="redes-sociales" class="social-section">
+            <h3 class="section-title">Explora el Mundo COFI</h3>
             <p class="social-tagline">El café que te acompaña en todas tus aventuras.</p>
-            <div class="social-images">
-                <img src="coficontacita-Photoroom.png" alt="Cofi con Tacita" class="social-image">
-            </div>
             <div class="social-links">
-                <a href="https://www.instagram.com/cofi_easybrew/profilecard/?igsh=MW84bHh2bW5tam9qcQ==" target="_blank" class="social-button">
+                <a href="https://www.instagram.com/cofi_easybrew/" target="_blank" class="social-button">
                     <img src="igiglogo.png" alt="Instagram" class="social-icon"> Instagram
                 </a>
-                <a href="https://www.tiktok.com/@cofi.easybrew?_t=8r94W8NAC2v&_r=1" target="_blank" class="social-button">
+                <a href="https://www.tiktok.com/@cofi.easybrew/" target="_blank" class="social-button">
                     <img src="tiktoklogo.png" alt="TikTok" class="social-icon"> TikTok
                 </a>
             </div>
@@ -92,6 +73,17 @@
         <p class="footer-text">"Sin desorden, sin complicaciones, solo buen café."</p>
         <button id="informacion" class="button secondary-button">Chatea para más información</button>
     </footer>
+
+    <!-- Formulario de Datos Adicionales -->
+    <div id="formulario" class="form-popup">
+        <h3>Completa tu información</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="direccion">Dirección exacta:</label>
+        <input type="text" id="direccion" required>
+        <button id="confirmar" class="button primary-button">Confirmar y Enviar</button>
+        <button id="cerrar" class="button secondary-button">Cancelar</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
