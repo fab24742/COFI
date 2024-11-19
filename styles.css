@@ -87,47 +87,6 @@ body {
     color: #0056a8;
 }
 
-/* Buttons */
-.button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.primary-button {
-    background-color: #0056a8;
-    color: #ffffff;
-}
-
-.primary-button:hover {
-    background-color: #003f78;
-}
-
-.secondary-button {
-    background-color: #ffffff;
-    color: #0056a8;
-    border: 2px solid #0056a8;
-}
-
-.secondary-button:hover {
-    background-color: #f0f0f0;
-}
-
-/* Instructions Section */
-.instructions-section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-}
-
-.instructions-image {
-    width: 80%;
-    max-width: 400px;
-}
-
 /* Social Section */
 .social-section {
     text-align: center;
