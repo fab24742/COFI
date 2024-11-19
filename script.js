@@ -11,5 +11,5 @@ document.querySelectorAll('.primary-button').forEach(button => {
 // Información adicional
 document.getElementById('informacion').addEventListener('click', () => {
     const mensaje = "Hola! Me gustaría recibir más información sobre COFI.";
-    window.open(`https://wa.me/51925773294?text=${encodeURIComponent(mensaje)}`, '_blank');
+    window.open(`https://wa.me/51951182402?text=${encodeURIComponent(mensaje)}`, '_blank');
 });
