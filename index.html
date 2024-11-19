@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFI - Café de Calidad</title>
+    <title>COFI - Tienda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,77 +13,55 @@
             <img src="logocofi.png" alt="Logo de COFI" class="logo">
             <h1 class="title">COFI</h1>
         </div>
+        <nav class="nav">
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#como-preparar" class="nav-link">Cómo Preparar</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </nav>
     </header>
     
-    <main class="main-content">
-        <!-- Producto -->
-        <section id="producto" class="product-section">
-            <h2 class="product-title">COFI Pack (10 Unidades)</h2>
-            <p class="product-description">Café de especialidad sin complicaciones. Perfecto para cualquier momento.</p>
-            <img src="COFIpacktaza.png" alt="COFI Pack" class="product-image">
-            
-            <div class="price-container">
-                <p class="product-price">Precio por pack: <span>S/35</span></p>
-                <div class="selection-container">
-                    <label for="cantidad" class="label">Cantidad:</label>
-                    <select id="cantidad" class="select">
-                        <option value="1">1 Pack</option>
-                        <option value="2">2 Packs (10% descuento)</option>
-                        <option value="3">3 Packs (15% descuento y envío gratis)</option>
-                    </select>
-                </div>
-                <div class="selection-container">
-                    <label for="distrito" class="label">Distrito:</label>
-                    <select id="distrito" class="select">
-                        <option value="8">San Borja - S/8</option>
-                        <option value="8">Miraflores - S/8</option>
-                        <option value="10">San Isidro - S/10</option>
-                        <option value="12">Surco - S/12</option>
-                        <option value="15">La Molina - S/15</option>
-                    </select>
-                </div>
-                <p class="total-price">Total: <span id="total">S/35</span></p>
-                <p class="discount-info" id="discount-info">Ahorro: <span>S/0</span></p>
+    <!-- Productos -->
+    <main id="productos" class="product-section">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="packcofipack.png" alt="COFI Pack 12 unidades" class="product-image">
+                <h3 class="product-title">COFI Pack (12 Unidades)</h3>
+                <p class="product-price">S/38.00</p>
+                <button class="button primary-button" data-pack="1" data-precio="38">Comprar</button>
             </div>
-            <button id="comprar" class="button primary-button">Comprar por WhatsApp</button>
-        </section>
-
-        <!-- Preparación -->
-        <section id="preparacion" class="preparation-section">
-            <h3 class="section-title">Tu Café Listo en 3 Pasos</h3>
-            <img src="COFIpreparaci.png" alt="Preparación COFI" class="prep-image">
-        </section>
-
-        <!-- Redes Sociales -->
-        <section id="redes-sociales" class="social-section">
-            <h3 class="section-title">Explora el Mundo COFI</h3>
-            <p class="social-tagline">El café que te acompaña en todas tus aventuras.</p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/cofi_easybrew/" target="_blank" class="social-button">
-                    <img src="igiglogo.png" alt="Instagram" class="social-icon"> Instagram
-                </a>
-                <a href="https://www.tiktok.com/@cofi.easybrew/" target="_blank" class="social-button">
-                    <img src="tiktoklogo.png" alt="TikTok" class="social-icon"> TikTok
-                </a>
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="2 doscofipack.png" alt="COFI Pack Doble" class="product-image">
+                <h3 class="product-title">2 COFI Packs (24 Unidades)</h3>
+                <p class="product-price">S/72.00 (Envío Gratis)</p>
+                <button class="button primary-button" data-pack="2" data-precio="72">Comprar</button>
             </div>
-        </section>
+        </div>
     </main>
-
-    <footer class="footer">
-        <p class="footer-text">"Sin desorden, sin complicaciones, solo buen café."</p>
-        <button id="informacion" class="button secondary-button">Chatea para más información</button>
+    
+    <!-- Cómo Preparar -->
+    <section id="como-preparar" class="instructions-section">
+        <h2 class="section-title">Tu Café Listo en 3 Pasos</h2>
+        <img src="COFIpreparaci.png" alt="Cómo preparar COFI" class="instructions-image">
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="footer-content">
+            <p>"Sin desorden, sin complicaciones, solo buen café."</p>
+            <button id="informacion" class="button secondary-button">Chatea para más información</button>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" class="social-button">
+                <img src="igiglogo.png" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank" class="social-button">
+                <img src="tiktoklogo.png" alt="TikTok" class="social-icon"> TikTok
+            </a>
+        </div>
     </footer>
-
-    <!-- Formulario de Datos Adicionales -->
-    <div id="formulario" class="form-popup">
-        <h3>Completa tu información</h3>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
-        <label for="direccion">Dirección exacta:</label>
-        <input type="text" id="direccion" required>
-        <button id="confirmar" class="button primary-button">Confirmar y Enviar</button>
-        <button id="cerrar" class="button secondary-button">Cancelar</button>
-    </div>
 
     <script src="script.js"></script>
 </body>
