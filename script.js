@@ -1,68 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFI - Tienda</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Barra Superior -->
-    <header class="header">
-        <div class="logo-container">
-            <img src="logocofi.png" alt="Logo de COFI" class="logo">
-            <h1 class="title">COFI</h1>
-        </div>
-        <nav class="nav">
-            <a href="#productos" class="nav-link">Productos</a>
-            <a href="#como-preparar" class="nav-link">Cómo Preparar</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
-        </nav>
-    </header>
-    
-    <!-- Productos -->
-    <main id="productos" class="product-section">
-        <h2 class="section-title">Nuestros Productos</h2>
-        <div class="product-grid">
-            <!-- Producto 1 -->
-            <div class="product-card">
-                <img src="packcofipack.png" alt="COFI Pack 12 unidades" class="product-image">
-                <h3 class="product-title">COFI Pack (12 Unidades)</h3>
-                <p class="product-price">S/38.00</p>
-                <button class="button primary-button" data-pack="1" data-precio="38">Comprar</button>
-            </div>
-            <!-- Producto 2 -->
-            <div class="product-card">
-                <img src="2 doscofipack.png" alt="COFI Pack Doble" class="product-image">
-                <h3 class="product-title">2 COFI Packs (24 Unidades)</h3>
-                <p class="product-price">S/72.00 (Envío Gratis)</p>
-                <button class="button primary-button" data-pack="2" data-precio="72">Comprar</button>
-            </div>
-        </div>
-    </main>
-    
-    <!-- Cómo Preparar -->
-    <section id="como-preparar" class="instructions-section">
-        <h2 class="section-title">Tu Café Listo en 3 Pasos</h2>
-        <img src="COFIpreparaci.png" alt="Cómo preparar COFI" class="instructions-image">
-    </section>
-    
-    <!-- Footer -->
-    <footer id="contacto" class="footer">
-        <div class="footer-content">
-            <img src="COFItermo.png" alt="COFI Termo" class="footer-image">
-            <img src="COFIvaloras buen ca.png" alt="Valora tu tiempo" class="footer-image">
-        </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/" target="_blank" class="social-button">
-                <img src="igiglogo.png" alt="Instagram" class="social-icon"> Instagram
-            </a>
-            <a href="https://www.tiktok.com/" target="_blank" class="social-button">
-                <img src="tiktoklogo.png" alt="TikTok" class="social-icon"> TikTok
-            </a>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+
+
+// Configuración de compra
+document.querySelectorAll('.primary-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const pack = button.getAttribute('data-pack');
+        const precio = button.getAttribute('data-precio');
+        const mensaje = Hola! Quiero comprar ${pack} COFI Pack(s) por S/${precio}.;
+        window.open(https://wa.me/51951182402?text=${encodeURIComponent(mensaje)}, '_blank');
+    });
+});
+
+// Información adicional
+document.getElementById('informacion').addEventListener('click', () => {
+    const mensaje = "Hola! Me gustaría recibir más información sobre COFI.";
+    window.open(https://wa.me/51951182402?text=${encodeURIComponent(mensaje)}, '_blank');
+});
