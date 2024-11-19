@@ -159,15 +159,20 @@ body {
     margin: 20px 0;
 }
 
+
+
 .footer-image {
     width: 150px; /* Ajusta el tamaño */
     height: auto;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombras */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px; /* Espaciado interno */
     transition: transform 0.3s ease; /* Animación al pasar el cursor */
 }
 
 .footer-image:hover {
     transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
 }
+
 
