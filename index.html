@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFI - Tienda</title>
+    <title>COFI - Tienda Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,49 +15,50 @@
         </div>
     </header>
     
-    <!-- Productos -->
+    <!-- Sección de Productos -->
     <main class="product-section">
         <h2 class="section-title">Nuestros Productos</h2>
-        <div class="selection-container">
-            <!-- Selección de Cantidad -->
-            <div class="selection-item">
-                <label for="cantidad" class="label">Cantidad:</label>
-                <select id="cantidad" class="select">
-                    <option value="1">1 Pack (12 Unidades)</option>
-                    <option value="2">2 Packs (24 Unidades - Delivery Gratis)</option>
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="COFIpacktaza.png" alt="COFI Pack 12 unidades" class="product-image">
+                <h3 class="product-title">COFI Pack (12 Unidades)</h3>
+                <p class="product-price">S/38.00</p>
+                <label for="distrito1">Distrito:</label>
+                <select id="distrito1" class="select">
+                    <option value="8">San Borja - S/8</option>
+                    <option value="8">Miraflores - S/8</option>
+                    <option value="10">San Isidro - S/10</option>
+                    <option value="12">Surco - S/12</option>
+                    <option value="15">La Molina - S/15</option>
                 </select>
+                <button class="button primary-button" data-pack="1" data-precio="38">Comprar</button>
             </div>
-            <!-- Selección de Distrito -->
-            <div class="selection-item">
-                <label for="distrito" class="label">Distrito:</label>
-                <select id="distrito" class="select">
-                    <option value="8">San Borja</option>
-                    <option value="8">Miraflores</option>
-                    <option value="10">San Isidro</option>
-                    <option value="12">Surco</option>
-                    <option value="15">La Molina</option>
-                    <option value="15">Villa El Salvador</option>
-                    <option value="15">Chorrillos</option>
-                </select>
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="COFItermo.png" alt="COFI Pack Doble" class="product-image">
+                <h3 class="product-title">2 COFI Packs (24 Unidades)</h3>
+                <p class="product-price">S/72.00 (Envío Gratis)</p>
+                <button class="button primary-button" data-pack="2" data-precio="72">Comprar</button>
             </div>
         </div>
-
-        <!-- Total Precio -->
-        <p class="total-price">Total: S/<span id="total">38.00</span></p>
-        <p id="delivery-note" class="delivery-note"></p>
-
-        <!-- Botón de Compra -->
-        <button id="comprar" class="button primary-button">Comprar por WhatsApp</button>
     </main>
-
-    <!-- Cómo Preparar -->
+    
+    <!-- Sección de Cómo Preparar -->
     <section class="instructions-section">
-        <img src="COFIpreparaci.png" alt="Cómo preparar COFI" class="instructions-image">
+        <h2 class="section-title">Tu Café Listo en 3 Pasos</h2>
+        <div class="instructions-grid">
+            <img src="COFIltrante.png" alt="Instrucciones de preparación" class="instructions-image">
+            <img src="COFIvaloras buen ca.png" alt="Disfruta tu café" class="instructions-image">
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>"Sin desorden, sin complicaciones, solo buen café."</p>
+        <div class="footer-content">
+            <p>"Sin desorden, sin complicaciones, solo buen café."</p>
+            <button id="informacion" class="button secondary-button">Chatea para más información</button>
+        </div>
         <div class="social-links">
             <a href="https://www.instagram.com/" target="_blank" class="social-button">
                 <img src="igiglogo.png" alt="Instagram" class="social-icon"> Instagram
